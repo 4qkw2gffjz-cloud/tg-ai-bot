@@ -1,3 +1,7 @@
+import sys
+import types
+
+sys.modules['imghdr'] = types.ModuleType('imghdr')
 import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
